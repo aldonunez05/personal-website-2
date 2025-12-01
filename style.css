@@ -3,7 +3,12 @@ body{
     background-color: bisque;
 }
 
-.element-with-scroll{
-    overflow: auto;
+
+.container{
+    -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar{
+    display: none;
 }
