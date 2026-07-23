@@ -4,26 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aldo Nunez | Personal Website</title>
+    <meta name="description" content="Aldo Nunez — Statistics &amp; Data Science student at UCSB, Software Engineer Intern at Piper.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        h1{
-            text-align: center;
-            font-family: Papyrus, fantasy;
-        }
-    </style>
 </head>
 <body>
-    <h1>Aldo Nunez</h1>
-    <div style=text-align:center;"">
-        <a href="https://github.com/aldonunez05" target="_blank">Github | </a>
-        <a href="https://www.linkedin.com/in/aldo-nunez/" target=_blank">LinkedIn |</a>
-        <a href="https://www.instagram.com/aldo.nunezz/" target="_blank">Insta |</a>
-        <a href="https://link.clashroyale.com/invite/friend/en?tag=RPJ9GY9C2&token=yzr33w8f&platform=iOS">Clash Royale</a>
-    </div>
 
-    <div>
-        <h3>I like math and computers</h3>
-    </div>
-    
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="nav__brand" href="#top">Aldo Nunez</a>
+            <ul class="nav__links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="container hero__inner">
+                <p class="hero__eyebrow">Hey, I'm</p>
+                <h1 class="hero__name">Aldo Nunez</h1>
+                <p class="hero__tagline">Statistics &amp; Data Science student at UCSB, currently interning as a Software Engineer at Piper.</p>
+                <div class="hero__cta">
+                    <a class="btn" href="#interests">See what I'm into</a>
+                    <a class="btn btn--ghost" href="#contact">Get in touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section__title">About</h2>
+                <p class="about__text">
+                    I like math and computers. I'm studying Statistics and Data Science at UC Santa Barbara
+                    (Class of 2027) and spending my summer as a Software Engineer Intern at Piper. When I'm not
+                    doing that, I'm probably playing chess, running Linux, or watching Atlético Madrid try to
+                    give me a heart attack.
+                </p>
+            </div>
+        </section>
+
+        <section id="education" class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Education</h2>
+                <div class="card card--wide">
+                    <img class="card__logo" src="pngs/ucsb-new-removebg-preview.png" alt="UC Santa Barbara logo">
+                    <div class="card__body">
+                        <h3 class="card__title">B.S. Statistics and Data Science</h3>
+                        <p class="card__subtitle">University of California, Santa Barbara &middot; Class of 2027</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section__title">Experience</h2>
+                <div class="card card--wide">
+                    <img class="card__logo" src="pngs/piper-removebg-preview.png" alt="Piper logo">
+                    <div class="card__body">
+                        <h3 class="card__title">Software Engineer Intern</h3>
+                        <p class="card__subtitle">Piper</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interests" class="section section--alt">
+            <div class="container">
+                <h2 class="section__title">Interests</h2>
+                <div class="grid">
+                    <div class="tile">
+                        <img class="tile__img tile__img--photo" src="pngs/chess.jpg" alt="Chess board">
+                        <p class="tile__label">Chess</p>
+                    </div>
+                    <div class="tile">
+                        <img class="tile__img" src="pngs/atleti.png" alt="Atlético Madrid crest">
+                        <p class="tile__label">Atlético Madrid</p>
+                    </div>
+                    <div class="tile">
+                        <img class="tile__img" src="pngs/tux-removebg-preview.png" alt="Tux the Linux penguin">
+                        <p class="tile__label">Linux</p>
+                    </div>
+                    <div class="tile">
+                        <img class="tile__img" src="pngs/gaucho.png" alt="UCSB Gauchos logo">
+                        <p class="tile__label">UCSB Gauchos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section--dark">
+            <div class="container contact">
+                <h2 class="section__title">Contact</h2>
+                <p class="contact__text">Find me around the internet:</p>
+                <div class="social">
+                    <a class="social__link" href="https://github.com/aldonunez05" target="_blank" rel="noopener">GitHub</a>
+                    <a class="social__link" href="https://www.linkedin.com/in/aldo-nunez/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a class="social__link" href="https://www.instagram.com/aldo.nunezz/" target="_blank" rel="noopener">Instagram</a>
+                    <a class="social__link" href="https://link.clashroyale.com/invite/friend/en?tag=RPJ9GY9C2&token=yzr33w8f&platform=iOS" target="_blank" rel="noopener">Clash Royale</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Aldo Nunez</p>
+    </footer>
+
 </body>
 </html>
