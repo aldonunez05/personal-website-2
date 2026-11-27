@@ -1,2 +1,1 @@
-README bro
-d com
+my personal website 
